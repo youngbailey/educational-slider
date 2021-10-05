@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Cinema</title>
+    <link rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" href="css/jquery.quiz-min.css">
+
+    <style>
+      section > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 7vw;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slides">
+      <section id="silent-film">
+  <!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="img/factory.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1>Silent Film</h1>
+  <p>Spanning from the 1890s to the 1920s, silent film marked the beginning of cinema as we know it.
+  Contradictory to the name, most films of this time were accompanied by a score of either recorded or live music.
+Tom Gunning refers to this era as the "Cinema of Attractions," in which film was more of a spectacle rather having narratives. The film above is "Workers Leaving the Lumiere Factory" and is often considered the first
+real motion picture. </p>
+</div>
+
+      </section>
+      <section id="sound-film">
+
+        <video autoplay muted loop id="myVideo">
+          <source src="img/Casablanca.mp4" type="video/mp4">
+          </video>
+          <div class="content">
+            <h1>Sound Film</h1>
+            <p> While film was always accompanied by sound, it wasn't until the 1920's that "talkies" emerged. Sound
+              with dialogue was difficult to achieve due to the syncronization of sound and film. In 1819, sound-on-film was
+              developed, in which the film strips photographically recorded the optical sound on the film itself.
+              Additionally in this era, films were recognized by their production companies, not actors. The film above "Casablanca,"
+              was created by Warner Bros to influence the United States to disregard their neutral stance in World War II.
+              <p>
+        </div>
+      </section>
+
+      <section id="coloring">
+        <video autoplay muted loop id="myVideo">
+          <source src="img/umbrellas.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+        <h1>Coloring</h1>
+        <p> Film colorization was mainly achieved in two ways: tinting and toning. This process
+        was used since the silent era, but quickly lost popularity in the 1920s due to the fragility of film.
+        In the 1950's, MGM created a new toning process that utilized special film cameras and an intereference-free process.
+        The most well known example of this is technicolor which was used for films like the Wizard of Oz. The film above,
+        "The Umbrellas of Cherbourg" is well known for its colorization which utilizes technicolor.
+      </p>
+      </div>
+      </section>
+
+      <section id="modern">
+        <video autoplay muted loop id="myVideo">
+          <source src="img/parasite.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+        <h1>Modern Film</h1>
+        <p> One major aspect of modern film today is digital cameras, but the industry didn't fully
+          move away from film cameras until 2013. The 2010's presented a new era of technology and application to cinema,
+          most notably including 3D movies. Additionally, the introduction of new streaming technologies creates
+          the question of the proper way to experience film. This modern era also displayed the rise of the superhero genre
+          when "Avengers: Endgame" became the highest grossing film of all time. Globalization has also
+          created a rise in popularity of international films. In 2019, "Parasite" became the first non-English
+          film to win Best Picture at the Academy Awards.
+         </p>
+      </div>
+      </section>
+
+      <section id="quiz">
+        <div id="quiz">
+          <div id="quiz-header">
+            <h1>Quiz Time!</h1>
+            <p><a id="quiz-home-btn">Quiz Home</a></p>
+          </div>
+          <div id="quiz-start-screen">
+            <p>
+              <a href="#" id="quiz-start-btn" class="quiz-button">Start Quiz</a>
+            </p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/jquery.quiz-min.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+      var mySlider = slider('.slides');
+    </script>
+  </body>
+</html>
